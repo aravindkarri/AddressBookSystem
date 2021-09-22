@@ -2,7 +2,8 @@ package com.bridgelabz;
 
 import java.util.Scanner;
 
-public class AddressBookService{
+public class AddressBookService
+{
 
     private int index = 0;
     Contact[] contacts = new Contact[20];
@@ -64,7 +65,8 @@ public class AddressBookService{
         }
         return false;
     }
-    public boolean deleteContact(String email) {
+    public boolean deleteContact(String email)
+    {
 
         for (int i = 0; i < contacts.length; i++)
         {
@@ -81,8 +83,10 @@ public class AddressBookService{
         return false;
     }
 
-    public void displayContacts() {
-        for (int i = 0; i < contacts.length; i++) {
+    public void displayContacts()
+    {
+        for (int i = 0; i < contacts.length; i++)
+        {
             if(contacts[i] != null)
             {
                 System.out.println(contacts[i]);

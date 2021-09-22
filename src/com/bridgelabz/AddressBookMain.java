@@ -2,15 +2,14 @@ package com.bridgelabz;
 
 import java.util.Scanner;
 
-public class AddressBookMain {
-
-    public static void main(String[] args) {
-
+public class AddressBookMain
+{
+    public static void main(String[] args)
+    {
         Scanner scanner = new Scanner(System.in);
-
         AddressBookService contact = new AddressBookService();
-
-        while (true) {
+        while (true)
+        {
             System.out.println("Please choose from below choices .");
             System.out.println(" 1 Add Contact "
                     + "\n 2 Edit Contact "
@@ -23,7 +22,8 @@ public class AddressBookMain {
                 case 1:
                     System.out.println("Enter How many numbers You want to Add ::");
                     int size = scanner.nextInt();
-                    for (int i = 0; i < size; i++) {
+                    for (int i = 0; i < size; i++)
+                    {
                         contact.addContact();
                     }
                     break;
@@ -58,9 +58,9 @@ public class AddressBookMain {
                     break;
                 default:
                     System.out.println("You just Quit");
+                    scanner.close();
                     System.exit(0);
             }
-
         }
     }
 }
